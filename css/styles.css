@@ -1,0 +1,700 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 4px;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 0;
+    color: #fff;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#hero .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+#hero .btn:hover {
+    background: #0056b3;
+}
+
+#featured-services {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #555;
+}
+
+#cta {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#cta .btn {
+    background: #fff;
+    color: #007BFF;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+#cta .btn:hover {
+    background: #ddd;
+}
+
+#testimonials {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active {
+    display: flex;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#booking-form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+#booking-form input, 
+#booking-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#booking-form button {
+    padding: 0.7rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#booking-form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
+#hero {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 0;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#hero .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+#hero .btn:hover {
+    background: #0056b3;
+}
+#testimonials {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active {
+    display: flex;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+#explore-rwanda {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#explore-rwanda .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#explore-rwanda h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#explore-rwanda p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#explore-rwanda .media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#explore-rwanda .media-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+}
+
+#explore-rwanda .media-item img,
+#explore-rwanda .media-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#explore-rwanda .media-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+}
+
+#explore-rwanda .media-item p {
+    font-size: 1rem;
+    margin: 0.5rem 1rem 1rem;
+}
+
+#explore-rwanda .media-item video {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+#luxury-cars {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#luxury-cars .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#luxury-cars h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#luxury-cars p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.car-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.car-info {
+    padding: 1rem;
+}
+
+.car-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.car-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.car-info .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.car-info .btn:hover {
+    background: #0056b3;
+}
+#best-hotels {
+    background: #f9f9f9;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#best-hotels .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#best-hotels h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#best-hotels p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hotel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.hotel-info {
+    padding: 1rem;
+}
+
+.hotel-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.hotel-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.hotel-info .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.hotel-info .btn:hover {
+    background: #0056b3;
+}
+#services {
+    background: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#services p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.service-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.category {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #007BFF;
+}
+
+.category p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+    color: #555;
+}
+
+.category ul {
+    padding: 0 1rem 1rem;
+    list-style-type: none;
+    color: #555;
+}
+
+.category ul li {
+    margin-bottom: 0.5rem;
+}
+
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category a:hover h3 {
+    text-decoration: underline;
+}
+#about {
+    background: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.about-text p,
+.about-text ul {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 0.5rem;
+}
+
+.about-text ul li strong {
+    color: #007BFF;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
